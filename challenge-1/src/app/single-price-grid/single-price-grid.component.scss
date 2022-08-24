@@ -1,7 +1,8 @@
-@media (max-width: 375px) {
+@media (max-width: 1000px) {
   section {
     width: 300px;
     margin: 0 auto;
+    padding-top: 50px;
   }
 
   body {
@@ -34,7 +35,10 @@
         padding-bottom: 15px;
       }
     }
-
+    .responsiveBlock{
+      display: flex;
+      flex-direction: column;
+    }
     .subscription {
       display: flex;
       flex-direction: column;
@@ -96,4 +100,113 @@
       }
     }
   }
+}
+
+@media (min-width: 1000px) {
+  section {
+    width: 600px;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+  br{
+    display: none;
+  }
+
+  body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .joinUs {
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      height: 100%;
+      background-color: #FFFFFF;
+      padding: 5px 20px 0px 20px;
+
+      h1 {
+        color: hsl(179, 62%, 43%);
+        font-size: 19px;
+      }
+
+      h2 {
+        color: hsl(71, 73%, 54%);
+        font-size: 15px;
+      }
+
+      p {
+        color: lightslategrey;
+        font-size: small;
+        line-height: 24px;
+        opacity: 60%;
+        padding-bottom: 15px;
+      }
+    }
+    .responsiveBlock{
+      display: flex;
+    }
+    .subscription {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      background-color: hsl(179, 62%, 43%);
+      padding: 0 20px 0 20px;
+      border-bottom-left-radius: 5px;
+
+      h1 {
+        color: #FFFFFF;
+        font-size: 20px;
+      }
+
+      h3 {
+        vertical-align: center;
+        color: lightgray;
+        font-weight: 400;
+        line-height: 0px;
+      }
+
+      b {
+        color: white;
+        font-size: 30px;
+        padding-right: 10px;
+      }
+
+      p {
+        color: #FFFFFF;
+        opacity: 80%;
+        line-height: 0px;
+        padding-bottom: 10px;
+      }
+
+      .box {
+        background-color: #C5D932;
+        height: 45px;
+        border: 0px;
+        border-radius: 5px;
+        align-self: center;
+        color: #FFFFFF;
+        font-weight: 700;
+        width: 95%;
+        margin-bottom: 20px;
+      }
+    }
+
+    .whyUs {
+      background-color: #4EBFB4;
+      width: 50%;
+      padding: 0 20px 20px 20px;
+      border-bottom-right-radius: 5px;
+
+      h1 {
+        color: #FFFFFF;
+      }
+
+      p {
+        color: #FFFFFF;
+        opacity: 70%;
+        line-height: 3px;
+      }
+    }
+  }
+
 }
